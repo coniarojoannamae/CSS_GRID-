@@ -60,6 +60,50 @@ export class ProductLayoutComponent {
   ];
 }
 
+//products-layout.model.css
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Space between grid items */
+  padding: 20px; /* Padding around the grid */
+}
+
+.product-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+.product-image {
+  width: 100%; /* Full width of the card */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Rounded corners for the image */
+}
+
+.product-name {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.product-description {
+  font-size: 1em;
+  color: #555;
+  margin: 10px 0;
+}
+
+.product-price {
+  font-size: 1.2em;
+  color: #007bff; /* Bootstrap primary color */
+}
+
 
 ## Employee Cards
 //employee-cards.model.ts
@@ -114,6 +158,52 @@ export class EmployeeCardsComponent {
   ];
 }
 
+//employee-cards.component.css
+.employee-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between grid items */
+    padding: 20px; /* Padding around the grid */
+  }
+  
+  .employee-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  
+  .employee-card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+  }
+  
+  .employee-image {
+    width: 100px; /* Set a fixed width for the image */
+    height: 100px; /* Set a fixed height for the image */
+    border-radius: 50%; /* Make the image circular */
+    margin-bottom: 10px;
+  }
+  
+  .employee-name {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+  
+  .employee-position {
+    font-size: 1.2em;
+    color: #555;
+  }
+  
+  .employee-bio {
+    font-size: 1em;
+    color: #777;
+    margin-top: 10px;
+  }
+
+
 
 ## Student profiles
 
@@ -144,4 +234,43 @@ export class StudentProfileComponent {
 };
 }
 
+//student-profile.component.ts
+.profile-container {
+    display: grid;
+    place-items: center; /* Center the card in the container */
+    height: 100vh; /* Full height of the viewport */
+    background-color: #f4f4f4; /* Light background color */
+  }
+  
+  .profile-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    max-width: 400px; /* Maximum width of the card */
+  }
+  
+  .profile-image {
+    width: 150px; /* Set a fixed width for the image */
+    height: 150px; /* Set a fixed height for the image */
+    border-radius: 50%; /* Make the image circular */
+    margin-bottom: 15px;
+  }
+  
+  .profile-name {
+    font-size: 1.8em;
+    margin: 10px 0;
+  }
+  
+  .profile-major {
+    font-size: 1.2em;
+    color: #555;
+  }
+  
+  .profile-bio {
+    font-size: 1em;
+    color: #777;
+    margin-top: 10px;
+  }
 
