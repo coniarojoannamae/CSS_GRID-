@@ -6,9 +6,11 @@ import {CommonModule} from "@angular/common";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {AppComponent} from "./app.component";
 import {ProductLayoutComponent } from './components/product-layout/product-layout.component';
+import { EmployeeCardsComponent } from './components/employee-cards/employee-cards.component';
 
 const routes: Routes = [
     { path: 'product-layout', component: ProductLayoutComponent},
+    { path: 'employee-cards', component: EmployeeCardsComponent},
     
 ];
 
@@ -24,6 +26,7 @@ const routes: Routes = [
     declarations: [
         AppComponent,
         ProductLayoutComponent,
+        EmployeeCardsComponent,
       
     ],
   

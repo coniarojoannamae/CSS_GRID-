@@ -1,0 +1,43 @@
+.employee-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between grid items */
+    padding: 20px; /* Padding around the grid */
+  }
+  
+  .employee-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  
+  .employee-card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+  }
+  
+  .employee-image {
+    width: 100px; /* Set a fixed width for the image */
+    height: 100px; /* Set a fixed height for the image */
+    border-radius: 50%; /* Make the image circular */
+    margin-bottom: 10px;
+  }
+  
+  .employee-name {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+  
+  .employee-position {
+    font-size: 1.2em;
+    color: #555;
+  }
+  
+  .employee-bio {
+    font-size: 1em;
+    color: #777;
+    margin-top: 10px;
+  }
